@@ -33,8 +33,10 @@ We do not use your email address for advertising or marketing.
 
 - **The developer** who runs the service, to add or remove you from the list.
 - **Google (Gmail).** Our alerts are sent from a Gmail account, so Google
-  processes your address to deliver the email. Google's privacy policy applies to
-  that processing.
+  processes your address to deliver the email. The developer also keeps a
+  working copy of the subscriber list in the service's Google account, protected
+  by two-step verification. It is deleted from there at the same time as
+  everywhere else. Google's privacy policy applies to that processing.
 - **GitHub.** The subscriber list is stored as an encrypted secret in GitHub,
   where the service runs. It is never stored in code or shown in logs.
 
@@ -66,7 +68,8 @@ they are deleted. We delete those along with your address.
 
 ## Security
 
-- Your email address and our passwords are stored as encrypted secrets.
+- Your email address is kept only in GitHub's encrypted secrets and the
+  service's Google account. Our passwords are stored as encrypted secrets.
 - The accounts that run the service use two-step verification.
 - Alerts are sent over an encrypted connection.
 
